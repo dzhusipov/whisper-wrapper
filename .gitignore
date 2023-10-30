@@ -1,4 +1,5 @@
 /target
-audio.mp3
-audio.wav
+*.mp3
+*.wav
 .env
+crt/

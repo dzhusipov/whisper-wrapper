@@ -1,0 +1,94 @@
+2023-10-30T15:12:56.210924+06:00 - received handshake Start { version_major: 0, version_minor: 9, server_properties: {"capabilities": FieldTable({"authentication_failure_close": Boolean(true), "basic.nack": Boolean(true), "connection.blocked": Boolean(true), "consumer_cancel_notify": Boolean(true), "consumer_priorities": Boolean(true), "direct_reply_to": Boolean(true), "exchange_exchange_bindings": Boolean(true), "per_consumer_qos": Boolean(true), "publisher_confirms": Boolean(true)}), "cluster_name": LongString("rabbit@my-rabbit"), "copyright": LongString("Copyright (c) 2007-2023 VMware, Inc. or its affiliates."), "information": LongString("Licensed under the MPL 2.0. Website: https://rabbitmq.com"), "platform": LongString("Erlang/OTP 25.3.2.7"), "product": LongString("RabbitMQ"), "version": LongString("3.12.7")}, mechanisms: "AMQPLAIN PLAIN", locales: "en_US" }
+2023-10-30T15:12:56.210998+06:00 - sending handshake StartOk { client_properties: {"capabilities": FieldTable({"connection.blocked": Boolean(true), "consumer_cancel_notify": Boolean(true)}), "platform": LongString("macos / rustc 1.73.0 (cc66ad468 2023-10-03)"), "product": LongString("amiquip"), "version": LongString("0.4.2")}, mechanism: "PLAIN", response: "\0admin\0admin", locale: "en_US" }
+2023-10-30T15:12:56.211605+06:00 - received handshake Tune { channel_max: 2047, frame_max: 131072, heartbeat: 60 }
+2023-10-30T15:12:56.211627+06:00 - starting heartbeat timers (60 sec)
+2023-10-30T15:12:56.211649+06:00 - sending handshake TuneOk { channel_max: 2047, frame_max: 131072, heartbeat: 60 }
+2023-10-30T15:12:56.211667+06:00 - sending handshake Open { virtual_host: "/", capabilities: "", insist: false }
+2023-10-30T15:12:56.212235+06:00 - received handshake OpenOk { known_hosts: "" }
+2023-10-30T15:12:56.212450+06:00 - opening channel 1
+2023-10-30T15:12:56.261068+06:00 - closing channel 1
+2023-10-30T15:12:56.261593+06:00 - closing connection
+2023-10-30T15:13:46.966877+06:00 - received handshake Start { version_major: 0, version_minor: 9, server_properties: {"capabilities": FieldTable({"authentication_failure_close": Boolean(true), "basic.nack": Boolean(true), "connection.blocked": Boolean(true), "consumer_cancel_notify": Boolean(true), "consumer_priorities": Boolean(true), "direct_reply_to": Boolean(true), "exchange_exchange_bindings": Boolean(true), "per_consumer_qos": Boolean(true), "publisher_confirms": Boolean(true)}), "cluster_name": LongString("rabbit@my-rabbit"), "copyright": LongString("Copyright (c) 2007-2023 VMware, Inc. or its affiliates."), "information": LongString("Licensed under the MPL 2.0. Website: https://rabbitmq.com"), "platform": LongString("Erlang/OTP 25.3.2.7"), "product": LongString("RabbitMQ"), "version": LongString("3.12.7")}, mechanisms: "AMQPLAIN PLAIN", locales: "en_US" }
+2023-10-30T15:13:46.966951+06:00 - sending handshake StartOk { client_properties: {"capabilities": FieldTable({"connection.blocked": Boolean(true), "consumer_cancel_notify": Boolean(true)}), "platform": LongString("macos / rustc 1.73.0 (cc66ad468 2023-10-03)"), "product": LongString("amiquip"), "version": LongString("0.4.2")}, mechanism: "PLAIN", response: "\0admin\0admin", locale: "en_US" }
+2023-10-30T15:13:46.967642+06:00 - received handshake Tune { channel_max: 2047, frame_max: 131072, heartbeat: 60 }
+2023-10-30T15:13:46.967662+06:00 - starting heartbeat timers (60 sec)
+2023-10-30T15:13:46.967683+06:00 - sending handshake TuneOk { channel_max: 2047, frame_max: 131072, heartbeat: 60 }
+2023-10-30T15:13:46.967700+06:00 - sending handshake Open { virtual_host: "/", capabilities: "", insist: false }
+2023-10-30T15:13:46.968506+06:00 - received handshake OpenOk { known_hosts: "" }
+2023-10-30T15:13:46.968666+06:00 - opening channel 1
+2023-10-30T15:13:46.978768+06:00 - Filename String: 2023102409293087019158052.wav
+2023-10-30T15:13:47.016013+06:00 - ffmpeg output: 
+2023-10-30T15:13:47.017309+06:00 - closing channel 1
+2023-10-30T15:13:47.017824+06:00 - closing connection
+2023-10-30T15:19:38.335886+06:00 - dotenvy loaded
+2023-10-30T15:19:38.348290+06:00 - received handshake Start { version_major: 0, version_minor: 9, server_properties: {"capabilities": FieldTable({"authentication_failure_close": Boolean(true), "basic.nack": Boolean(true), "connection.blocked": Boolean(true), "consumer_cancel_notify": Boolean(true), "consumer_priorities": Boolean(true), "direct_reply_to": Boolean(true), "exchange_exchange_bindings": Boolean(true), "per_consumer_qos": Boolean(true), "publisher_confirms": Boolean(true)}), "cluster_name": LongString("rabbit@my-rabbit"), "copyright": LongString("Copyright (c) 2007-2023 VMware, Inc. or its affiliates."), "information": LongString("Licensed under the MPL 2.0. Website: https://rabbitmq.com"), "platform": LongString("Erlang/OTP 25.3.2.7"), "product": LongString("RabbitMQ"), "version": LongString("3.12.7")}, mechanisms: "AMQPLAIN PLAIN", locales: "en_US" }
+2023-10-30T15:19:38.348359+06:00 - sending handshake StartOk { client_properties: {"capabilities": FieldTable({"connection.blocked": Boolean(true), "consumer_cancel_notify": Boolean(true)}), "platform": LongString("macos / rustc 1.73.0 (cc66ad468 2023-10-03)"), "product": LongString("amiquip"), "version": LongString("0.4.2")}, mechanism: "PLAIN", response: "\0admin\0admin", locale: "en_US" }
+2023-10-30T15:19:38.348928+06:00 - received handshake Tune { channel_max: 2047, frame_max: 131072, heartbeat: 60 }
+2023-10-30T15:19:38.348944+06:00 - starting heartbeat timers (60 sec)
+2023-10-30T15:19:38.348963+06:00 - sending handshake TuneOk { channel_max: 2047, frame_max: 131072, heartbeat: 60 }
+2023-10-30T15:19:38.348979+06:00 - sending handshake Open { virtual_host: "/", capabilities: "", insist: false }
+2023-10-30T15:19:38.349645+06:00 - received handshake OpenOk { known_hosts: "" }
+2023-10-30T15:19:38.349800+06:00 - opening channel 1
+2023-10-30T15:19:38.361022+06:00 - Filename String: 2023102409293087019158052.wav
+2023-10-30T15:19:38.403539+06:00 - ffmpeg output: 
+2023-10-30T15:19:38.404867+06:00 - closing channel 1
+2023-10-30T15:19:38.405519+06:00 - closing connection
+2023-10-30T15:59:56.119726+06:00 - dotenvy loaded
+2023-10-30T15:59:56.130283+06:00 - received handshake Start { version_major: 0, version_minor: 9, server_properties: {"capabilities": FieldTable({"authentication_failure_close": Boolean(true), "basic.nack": Boolean(true), "connection.blocked": Boolean(true), "consumer_cancel_notify": Boolean(true), "consumer_priorities": Boolean(true), "direct_reply_to": Boolean(true), "exchange_exchange_bindings": Boolean(true), "per_consumer_qos": Boolean(true), "publisher_confirms": Boolean(true)}), "cluster_name": LongString("rabbit@my-rabbit"), "copyright": LongString("Copyright (c) 2007-2023 VMware, Inc. or its affiliates."), "information": LongString("Licensed under the MPL 2.0. Website: https://rabbitmq.com"), "platform": LongString("Erlang/OTP 25.3.2.7"), "product": LongString("RabbitMQ"), "version": LongString("3.12.7")}, mechanisms: "AMQPLAIN PLAIN", locales: "en_US" }
+2023-10-30T15:59:56.130333+06:00 - sending handshake StartOk { client_properties: {"capabilities": FieldTable({"connection.blocked": Boolean(true), "consumer_cancel_notify": Boolean(true)}), "platform": LongString("macos / rustc 1.73.0 (cc66ad468 2023-10-03)"), "product": LongString("amiquip"), "version": LongString("0.4.2")}, mechanism: "PLAIN", response: "\0admin\0admin", locale: "en_US" }
+2023-10-30T15:59:56.131494+06:00 - received handshake Tune { channel_max: 2047, frame_max: 131072, heartbeat: 60 }
+2023-10-30T15:59:56.131511+06:00 - starting heartbeat timers (60 sec)
+2023-10-30T15:59:56.131532+06:00 - sending handshake TuneOk { channel_max: 2047, frame_max: 131072, heartbeat: 60 }
+2023-10-30T15:59:56.131549+06:00 - sending handshake Open { virtual_host: "/", capabilities: "", insist: false }
+2023-10-30T15:59:56.132681+06:00 - received handshake OpenOk { known_hosts: "" }
+2023-10-30T15:59:56.132825+06:00 - opening channel 1
+2023-10-30T15:59:56.134688+06:00 - opening channel 2
+2023-10-30T15:59:56.136508+06:00 - server closing channel 2: Close { reply_code: 406, reply_text: "PRECONDITION_FAILED - inequivalent arg 'durable' for queue 'transcription_results' in vhost '/': received 'false' but current is 'true'", class_id: 50, method_id: 10 }
+2023-10-30T15:59:56.136690+06:00 - closing channel 2
+2023-10-30T15:59:56.136721+06:00 - closing channel 1
+2023-10-30T15:59:56.137222+06:00 - closing connection
+2023-10-30T16:06:28.869321+06:00 - dotenvy loaded
+2023-10-30T16:06:28.879486+06:00 - received handshake Start { version_major: 0, version_minor: 9, server_properties: {"capabilities": FieldTable({"authentication_failure_close": Boolean(true), "basic.nack": Boolean(true), "connection.blocked": Boolean(true), "consumer_cancel_notify": Boolean(true), "consumer_priorities": Boolean(true), "direct_reply_to": Boolean(true), "exchange_exchange_bindings": Boolean(true), "per_consumer_qos": Boolean(true), "publisher_confirms": Boolean(true)}), "cluster_name": LongString("rabbit@my-rabbit"), "copyright": LongString("Copyright (c) 2007-2023 VMware, Inc. or its affiliates."), "information": LongString("Licensed under the MPL 2.0. Website: https://rabbitmq.com"), "platform": LongString("Erlang/OTP 25.3.2.7"), "product": LongString("RabbitMQ"), "version": LongString("3.12.7")}, mechanisms: "AMQPLAIN PLAIN", locales: "en_US" }
+2023-10-30T16:06:28.879538+06:00 - sending handshake StartOk { client_properties: {"capabilities": FieldTable({"connection.blocked": Boolean(true), "consumer_cancel_notify": Boolean(true)}), "platform": LongString("macos / rustc 1.73.0 (cc66ad468 2023-10-03)"), "product": LongString("amiquip"), "version": LongString("0.4.2")}, mechanism: "PLAIN", response: "\0admin\0admin", locale: "en_US" }
+2023-10-30T16:06:28.880118+06:00 - received handshake Tune { channel_max: 2047, frame_max: 131072, heartbeat: 60 }
+2023-10-30T16:06:28.880136+06:00 - starting heartbeat timers (60 sec)
+2023-10-30T16:06:28.880156+06:00 - sending handshake TuneOk { channel_max: 2047, frame_max: 131072, heartbeat: 60 }
+2023-10-30T16:06:28.880179+06:00 - sending handshake Open { virtual_host: "/", capabilities: "", insist: false }
+2023-10-30T16:06:28.880709+06:00 - received handshake OpenOk { known_hosts: "" }
+2023-10-30T16:06:28.880836+06:00 - opening channel 1
+2023-10-30T16:06:28.883516+06:00 - opening channel 2
+2023-10-30T16:06:28.899752+06:00 - Filename String: 2023102409293087019158052.wav
+2023-10-30T16:06:29.009281+06:00 - ffmpeg output: 
+2023-10-30T16:06:29.011043+06:00 - closing channel 2
+2023-10-30T16:06:29.011927+06:00 - closing channel 1
+2023-10-30T16:06:29.012282+06:00 - closing connection
+2023-10-30T16:06:34.798584+06:00 - dotenvy loaded
+2023-10-30T16:06:34.810624+06:00 - received handshake Start { version_major: 0, version_minor: 9, server_properties: {"capabilities": FieldTable({"authentication_failure_close": Boolean(true), "basic.nack": Boolean(true), "connection.blocked": Boolean(true), "consumer_cancel_notify": Boolean(true), "consumer_priorities": Boolean(true), "direct_reply_to": Boolean(true), "exchange_exchange_bindings": Boolean(true), "per_consumer_qos": Boolean(true), "publisher_confirms": Boolean(true)}), "cluster_name": LongString("rabbit@my-rabbit"), "copyright": LongString("Copyright (c) 2007-2023 VMware, Inc. or its affiliates."), "information": LongString("Licensed under the MPL 2.0. Website: https://rabbitmq.com"), "platform": LongString("Erlang/OTP 25.3.2.7"), "product": LongString("RabbitMQ"), "version": LongString("3.12.7")}, mechanisms: "AMQPLAIN PLAIN", locales: "en_US" }
+2023-10-30T16:06:34.810671+06:00 - sending handshake StartOk { client_properties: {"capabilities": FieldTable({"connection.blocked": Boolean(true), "consumer_cancel_notify": Boolean(true)}), "platform": LongString("macos / rustc 1.73.0 (cc66ad468 2023-10-03)"), "product": LongString("amiquip"), "version": LongString("0.4.2")}, mechanism: "PLAIN", response: "\0admin\0admin", locale: "en_US" }
+2023-10-30T16:06:34.811509+06:00 - received handshake Tune { channel_max: 2047, frame_max: 131072, heartbeat: 60 }
+2023-10-30T16:06:34.811527+06:00 - starting heartbeat timers (60 sec)
+2023-10-30T16:06:34.811548+06:00 - sending handshake TuneOk { channel_max: 2047, frame_max: 131072, heartbeat: 60 }
+2023-10-30T16:06:34.811564+06:00 - sending handshake Open { virtual_host: "/", capabilities: "", insist: false }
+2023-10-30T16:06:34.812290+06:00 - received handshake OpenOk { known_hosts: "" }
+2023-10-30T16:06:34.812407+06:00 - opening channel 1
+2023-10-30T16:06:34.813562+06:00 - opening channel 2
+2023-10-30T16:06:34.823114+06:00 - Filename String: 2023102409293087019158052.wav
+2023-10-30T16:06:34.861358+06:00 - ffmpeg output: 
+2023-10-30T16:06:34.862577+06:00 - closing channel 2
+2023-10-30T16:06:34.863071+06:00 - closing channel 1
+2023-10-30T16:06:34.863456+06:00 - closing connection
+2023-10-30T16:07:54.047317+06:00 - dotenvy loaded
+2023-10-30T16:07:54.054417+06:00 - received handshake Start { version_major: 0, version_minor: 9, server_properties: {"capabilities": FieldTable({"authentication_failure_close": Boolean(true), "basic.nack": Boolean(true), "connection.blocked": Boolean(true), "consumer_cancel_notify": Boolean(true), "consumer_priorities": Boolean(true), "direct_reply_to": Boolean(true), "exchange_exchange_bindings": Boolean(true), "per_consumer_qos": Boolean(true), "publisher_confirms": Boolean(true)}), "cluster_name": LongString("rabbit@my-rabbit"), "copyright": LongString("Copyright (c) 2007-2023 VMware, Inc. or its affiliates."), "information": LongString("Licensed under the MPL 2.0. Website: https://rabbitmq.com"), "platform": LongString("Erlang/OTP 25.3.2.7"), "product": LongString("RabbitMQ"), "version": LongString("3.12.7")}, mechanisms: "AMQPLAIN PLAIN", locales: "en_US" }
+2023-10-30T16:07:54.054467+06:00 - sending handshake StartOk { client_properties: {"capabilities": FieldTable({"connection.blocked": Boolean(true), "consumer_cancel_notify": Boolean(true)}), "platform": LongString("macos / rustc 1.73.0 (cc66ad468 2023-10-03)"), "product": LongString("amiquip"), "version": LongString("0.4.2")}, mechanism: "PLAIN", response: "\0admin\0admin", locale: "en_US" }
+2023-10-30T16:07:54.055012+06:00 - received handshake Tune { channel_max: 2047, frame_max: 131072, heartbeat: 60 }
+2023-10-30T16:07:54.055033+06:00 - starting heartbeat timers (60 sec)
+2023-10-30T16:07:54.055056+06:00 - sending handshake TuneOk { channel_max: 2047, frame_max: 131072, heartbeat: 60 }
+2023-10-30T16:07:54.055076+06:00 - sending handshake Open { virtual_host: "/", capabilities: "", insist: false }
+2023-10-30T16:07:54.055549+06:00 - received handshake OpenOk { known_hosts: "" }
+2023-10-30T16:07:54.055651+06:00 - opening channel 1
+2023-10-30T16:07:54.056311+06:00 - opening channel 2
+2023-10-30T16:07:54.065544+06:00 - Filename String: 2023102409293087019158052.wav
+2023-10-30T16:07:54.103341+06:00 - ffmpeg output: 
+2023-10-30T16:07:54.104648+06:00 - closing channel 2
+2023-10-30T16:07:54.105136+06:00 - closing channel 1
+2023-10-30T16:07:54.105525+06:00 - closing connection

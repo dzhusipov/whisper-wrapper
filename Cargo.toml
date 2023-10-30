@@ -8,6 +8,8 @@ edition = "2021"
 [dependencies]
 amiquip = { version = "0.4.2", default-features = false }
 dotenvy = "0.15.7"
+log4rs = "1.2.0"
+log = "0.4.20"
 
 [profile.release]
 strip = true        # Automatically strip symbols from the binary.
