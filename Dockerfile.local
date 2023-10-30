@@ -16,11 +16,11 @@ FROM alpine:latest
 
 WORKDIR /app
 
-COPY --from=build /app/target/aarch64-unknown-linux-musl/release/whisper-wrapper /app/whisper-wrapper
+COPY --from=build /app/target/aarch64-unknown-linux-musl/release/whisper-rabbit /app/whisper-rabbit
 COPY --from=build /app/config /app/config
-COPY --from=build /app/.env_docker /app/.env
+COPY --from=build /app/.docker.env /app/.env
 
 EXPOSE 5060
 EXPOSE 8080
 
-CMD ["/app/whisper-wrapper"]
+CMD ["/app/whisper-rabbit"]
