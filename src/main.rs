@@ -6,6 +6,9 @@ use log::{debug, error};
 use std::fs::File;
 use std::io::prelude::*;
 use std::process::Command;
+use std::path::PathBuf;
+use std::thread::sleep;
+use std::time::Duration;
 
 fn main() {
     log4rs::init_file("config/log4rs.yaml", Default::default()).unwrap();
@@ -67,17 +70,20 @@ fn main() {
                 let mut file = File::create(filename_string.clone()).unwrap();
                 file.write_all(&delivery.body).unwrap();
 
+                let mut audio_file_wav = PathBuf::from(filename_string.clone());
+                audio_file_wav.set_extension("wav");
+
                 // Convert the audio file to WAV using ffmpeg
                 let ffmpeg = Command::new("ffmpeg")
                     .arg("-i")
-                    .arg("audio.mp3")
+                    .arg(filename_string.clone())
                     .arg("-acodec")
                     .arg("pcm_s16le")
                     .arg("-ar")
                     .arg("16000")
                     .arg("-ac")
                     .arg("1")
-                    .arg(filename_string.clone())
+                    .arg(format!("ffmpeg-{}",audio_file_wav.to_str().unwrap()))
                     .output()
                     .unwrap();
 
@@ -85,18 +91,23 @@ fn main() {
                 debug!("ffmpeg output: {}", String::from_utf8_lossy(&ffmpeg.stdout));
 
                 // ./main -otxt -m models/ggml-base.en.bin -f samples/jfk.wav
-                let whisper = Command::new("./main")
+                let whisper = Command::new("/Users/dasm/develop/others/whisper.cpp/main")
                     .arg("-oj") // json output
                     .arg("-m")
-                    .arg("models/ggml-base.bin")
+                    .arg("/Users/dasm/develop/others/whisper.cpp/models/ggml-base.bin")
                     .arg("-f")
-                    .arg(filename_string.clone())
+                    .arg(format!("/Users/dasm/develop/rust/whisper-rabbit/ffmpeg-{}",audio_file_wav.to_str().unwrap()))
                     .output()
                     .unwrap();
 
                 debug!("{}", String::from_utf8_lossy(&whisper.stdout));
                 // Publish a message to the results queue
-                let publish: Publish = Publish::new("Hello World".as_bytes(), "");
+                sleep(Duration::from_secs(1));
+                let mut file: File = File::open(format!("{}.json", audio_file_wav.to_str().unwrap())).unwrap();
+                let mut json_data = String::new();
+                file.read_to_string(&mut json_data).unwrap();
+
+                let publish: Publish = Publish::new(json_data.as_bytes(), "transcription_results");
                 let send_result = sender_channel.basic_publish("", publish);
                 match send_result {
                     Ok(_) => debug!("Message sent"),

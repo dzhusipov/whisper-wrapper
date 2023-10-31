@@ -3,3 +3,9 @@
 *.wav
 .env
 crt/
+log/
+*.ogg
+downloaded/
+converted/
+result/
+.json
